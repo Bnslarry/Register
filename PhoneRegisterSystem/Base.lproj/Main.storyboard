@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="929" y="-844"/>
         </scene>
-        <!--View Controller-->
+        <!--Alert Password View Controller-->
         <scene sceneID="YH7-dd-mUN">
             <objects>
-                <viewController id="PAv-Fs-TFx" sceneMemberID="viewController">
+                <viewController id="PAv-Fs-TFx" customClass="AlertPasswordViewController" customModule="PhoneRegisterSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bq2-Y1-ebJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,41 +75,53 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uTf-ne-wt0">
                                 <rect key="frame" x="120" y="200" width="210" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XHu-jK-xkT">
                                 <rect key="frame" x="120" y="280" width="210" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glO-IC-sAc">
-                                <rect key="frame" x="130" y="400" width="120" height="30"/>
+                                <rect key="frame" x="130" y="360" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="重设密码"/>
+                                <connections>
+                                    <action selector="reconfigure:" destination="PAv-Fs-TFx" eventType="touchUpInside" id="aCq-3D-Wit"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAS-rf-7bH">
                                 <rect key="frame" x="15" y="20" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="&lt;取消"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="KQr-8A-EeN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="mMO-1P-9Su"/>
                     </view>
+                    <connections>
+                        <outlet property="newPassword" destination="XHu-jK-xkT" id="9nV-yb-oP0"/>
+                        <outlet property="password" destination="uTf-ne-wt0" id="yAh-Bm-Wra"/>
+                        <outlet property="reconfigureBtn" destination="glO-IC-sAc" id="glg-Px-XOg"/>
+                        <outlet property="userPhone" destination="T9M-gL-85O" id="fzX-AF-xtf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6d-sa-6Xi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1119" y="-564"/>
+            <point key="canvasLocation" x="-1308" y="-499"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -186,6 +198,9 @@
                                 <rect key="frame" x="40" y="290" width="80" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="修改密码"/>
+                                <connections>
+                                    <segue destination="PAv-Fs-TFx" kind="presentation" id="NWO-Gp-RP0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -499,6 +514,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3yY-cv-gcr"/>
+        <segue reference="Lfc-aG-QJS"/>
     </inferredMetricsTieBreakers>
 </document>
