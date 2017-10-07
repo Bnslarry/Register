@@ -17,6 +17,11 @@ class WelcomeViewController: UIViewController {
     
     @IBOutlet weak var password: UITextField!
     
+    @IBOutlet weak var registerBtn: UIButton!
+    
+    @IBOutlet weak var alertPasswordBtn: UIButton!
+    
+    
     @IBAction func logIn(_ sender: UIButton) {
        let urlstring = "http://fengke.net:8081/app/login"
                 
@@ -84,6 +89,8 @@ class WelcomeViewController: UIViewController {
         
         present(alert, animated: true, completion: nil)
     }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

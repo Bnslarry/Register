@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1D0762A81F885A5100B9FF47 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0762A01F885A5000B9FF47 /* SwiftyJSON.swift */; };
+		1D0762AA1F88726F00B9FF47 /* SendMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0762A91F88726F00B9FF47 /* SendMessageViewController.swift */; };
+		1D0762AC1F88AE1000B9FF47 /* EditInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0762AB1F88AE1000B9FF47 /* EditInfoViewController.swift */; };
+		1D0762AE1F88CFCF00B9FF47 /* AlertPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0762AD1F88CFCF00B9FF47 /* AlertPasswordViewController.swift */; };
 		1D8EF7A51F838D820089444F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8EF7A41F838D820089444F /* AppDelegate.swift */; };
 		1D8EF7A71F838D820089444F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8EF7A61F838D820089444F /* WelcomeViewController.swift */; };
 		1D8EF7AA1F838D820089444F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8EF7A81F838D820089444F /* Main.storyboard */; };
@@ -92,6 +95,9 @@
 
 /* Begin PBXFileReference section */
 		1D0762A01F885A5000B9FF47 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "../../../Downloads/SwiftyJSON-master/Source/SwiftyJSON.swift"; sourceTree = "<group>"; };
+		1D0762A91F88726F00B9FF47 /* SendMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageViewController.swift; sourceTree = "<group>"; };
+		1D0762AB1F88AE1000B9FF47 /* EditInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInfoViewController.swift; sourceTree = "<group>"; };
+		1D0762AD1F88CFCF00B9FF47 /* AlertPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPasswordViewController.swift; sourceTree = "<group>"; };
 		1D8EF7A11F838D820089444F /* PhoneRegisterSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneRegisterSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8EF7A41F838D820089444F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D8EF7A61F838D820089444F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +147,9 @@
 				1D8EF7AB1F838D820089444F /* Assets.xcassets */,
 				1D8EF7AD1F838D820089444F /* LaunchScreen.storyboard */,
 				1D8EF7B01F838D820089444F /* Info.plist */,
+				1D0762A91F88726F00B9FF47 /* SendMessageViewController.swift */,
+				1D0762AB1F88AE1000B9FF47 /* EditInfoViewController.swift */,
+				1D0762AD1F88CFCF00B9FF47 /* AlertPasswordViewController.swift */,
 			);
 			path = PhoneRegisterSystem;
 			sourceTree = "<group>";
@@ -291,8 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D0762AE1F88CFCF00B9FF47 /* AlertPasswordViewController.swift in Sources */,
 				1D0762A81F885A5100B9FF47 /* SwiftyJSON.swift in Sources */,
+				1D0762AA1F88726F00B9FF47 /* SendMessageViewController.swift in Sources */,
 				1D8EF7A71F838D820089444F /* WelcomeViewController.swift in Sources */,
+				1D0762AC1F88AE1000B9FF47 /* EditInfoViewController.swift in Sources */,
 				1D8EF7A51F838D820089444F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
