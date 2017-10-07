@@ -16,6 +16,7 @@
 		1D8EF7AA1F838D820089444F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8EF7A81F838D820089444F /* Main.storyboard */; };
 		1D8EF7AC1F838D820089444F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D8EF7AB1F838D820089444F /* Assets.xcassets */; };
 		1D8EF7AF1F838D820089444F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8EF7AD1F838D820089444F /* LaunchScreen.storyboard */; };
+		1D9FCA8B1F88D94C007BF11D /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9FCA8A1F88D94C007BF11D /* ForgetPasswordViewController.swift */; };
 		1DA877BD1F87B84A003DC05B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA877B01F87B800003DC05B /* Alamofire.framework */; };
 		1DA877BE1F87B84A003DC05B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA877B01F87B800003DC05B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -105,6 +106,7 @@
 		1D8EF7AB1F838D820089444F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D8EF7AE1F838D820089444F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D8EF7B01F838D820089444F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D9FCA8A1F88D94C007BF11D /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		1DA877A41F87B800003DC05B /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +152,7 @@
 				1D0762A91F88726F00B9FF47 /* SendMessageViewController.swift */,
 				1D0762AB1F88AE1000B9FF47 /* EditInfoViewController.swift */,
 				1D0762AD1F88CFCF00B9FF47 /* AlertPasswordViewController.swift */,
+				1D9FCA8A1F88D94C007BF11D /* ForgetPasswordViewController.swift */,
 			);
 			path = PhoneRegisterSystem;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				1D0762A81F885A5100B9FF47 /* SwiftyJSON.swift in Sources */,
 				1D0762AA1F88726F00B9FF47 /* SendMessageViewController.swift in Sources */,
 				1D8EF7A71F838D820089444F /* WelcomeViewController.swift in Sources */,
+				1D9FCA8B1F88D94C007BF11D /* ForgetPasswordViewController.swift in Sources */,
 				1D0762AC1F88AE1000B9FF47 /* EditInfoViewController.swift in Sources */,
 				1D8EF7A51F838D820089444F /* AppDelegate.swift in Sources */,
 			);

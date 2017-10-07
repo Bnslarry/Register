@@ -36,6 +36,8 @@ class SendMessageViewController: UIViewController {
                 self.identityLabel.text = "✅"
                 self.identityLabel.isHidden = false
                 self.NextBtn.isEnabled = true
+                self.identityBtn.isEnabled = false
+                self.identifiedCode.isEnabled = false
             }
             else {
                 self.spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.white
@@ -125,18 +127,15 @@ class SendMessageViewController: UIViewController {
                         if let status = json["status"].int {
                             if(status == 1)
                             {
-                                    let alert_did = UIAlertController(title: "提示", message: "该用户已注册", preferredStyle: .alert)
-                                    
-                                    let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                                    alert_did.addAction(okAction)
-                                    
-                                    self.present(alert_did, animated: true, completion: nil)
+                                let alert_did = UIAlertController(title: "提示", message: "该用户已注册", preferredStyle: .alert)
+                                let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                                alert_did.addAction(okAction)
+                                self.present(alert_did, animated: true, completion: nil)
                             }
                             else {
-                                    self.isCounting = true
-                                    self.identifiedCode.isEnabled = true
-                                    self.identityBtn.isEnabled = true
-                                }
+                                self.isCounting = true
+                                self.identifiedCode.isEnabled = true
+                                self.identityBtn.isEnabled = true
                             }
                         }
                     }
@@ -145,7 +144,6 @@ class SendMessageViewController: UIViewController {
                 }
             }
         }
-        
         
     }
     
@@ -158,3 +156,4 @@ class SendMessageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
+
