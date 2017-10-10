@@ -26,7 +26,7 @@ class SendMessageViewController: UIViewController {
         spinner.isHidden = false
         spinner.startAnimating()
         
-        let time: TimeInterval = 2.0
+        let time: TimeInterval = 0.6
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + time) {
             let identCode = self.identifiedCode.text
             if(identCode?.characters.count == 4)
@@ -88,6 +88,7 @@ class SendMessageViewController: UIViewController {
             let controller = segue.destination as! EditInfoViewController
             
             controller.userPhone = phone.text!
+            print("手机号:\(controller.userPhone)")
         }
     }
     
@@ -117,7 +118,7 @@ class SendMessageViewController: UIViewController {
         }
         else {
             let urlstring = "http://fengke.net:8081/app/isExist"
-            Alamofire.request(urlstring, method:.post, parameters: ["userId": phone!]).responseJSON {
+            Alamofire.request(urlstring, method:.post, parameters: ["userId": numString!]).responseJSON {
                 (returnResult) in
                 switch returnResult.result.isSuccess {
                 case true:
@@ -133,6 +134,10 @@ class SendMessageViewController: UIViewController {
                                 self.present(alert_did, animated: true, completion: nil)
                             }
                             else {
+                                let url = "http://fengke.net:8081/app/message"
+                                Alamofire.request(url, method:.post, parameters: ["userPhone": self.phone.text!]).responseJSON {
+                                    (returnResult) in
+                                }
                                 self.isCounting = true
                                 self.identifiedCode.isEnabled = true
                                 self.identityBtn.isEnabled = true

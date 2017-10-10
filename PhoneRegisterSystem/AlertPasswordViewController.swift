@@ -57,10 +57,21 @@ class AlertPasswordViewController: UIViewController {
     }
     
     func showMessage(message msg: String!) {
+        if(msg == "修改密码成功!")
+        {
+            let alert = UIAlertController(title: "提示", message: msg, preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: {
+                action in self.performSegue(withIdentifier: "AlertPasswordOK", sender: nil)
+            })
+            alert.addAction(okAction)
+            self.present(alert, animated: true, completion: nil)
+        }
+        else {
         let alert = UIAlertController(title: "提示", message: msg, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
+        }
     }
     
     override func viewDidLoad() {

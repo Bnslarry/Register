@@ -99,7 +99,7 @@
 		1D0762A91F88726F00B9FF47 /* SendMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageViewController.swift; sourceTree = "<group>"; };
 		1D0762AB1F88AE1000B9FF47 /* EditInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInfoViewController.swift; sourceTree = "<group>"; };
 		1D0762AD1F88CFCF00B9FF47 /* AlertPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPasswordViewController.swift; sourceTree = "<group>"; };
-		1D8EF7A11F838D820089444F /* PhoneRegisterSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneRegisterSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D8EF7A11F838D820089444F /* PhoneRegister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneRegister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8EF7A41F838D820089444F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D8EF7A61F838D820089444F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		1D8EF7A91F838D820089444F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 		1D8EF7A21F838D820089444F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D8EF7A11F838D820089444F /* PhoneRegisterSystem.app */,
+				1D8EF7A11F838D820089444F /* PhoneRegister.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,9 +174,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D8EF7A01F838D810089444F /* PhoneRegisterSystem */ = {
+		1D8EF7A01F838D810089444F /* PhoneRegister */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D8EF7B31F838D820089444F /* Build configuration list for PBXNativeTarget "PhoneRegisterSystem" */;
+			buildConfigurationList = 1D8EF7B31F838D820089444F /* Build configuration list for PBXNativeTarget "PhoneRegister" */;
 			buildPhases = (
 				1D8EF79D1F838D810089444F /* Sources */,
 				1D8EF79E1F838D810089444F /* Frameworks */,
@@ -188,9 +188,9 @@
 			dependencies = (
 				1DA877C01F87B84A003DC05B /* PBXTargetDependency */,
 			);
-			name = PhoneRegisterSystem;
+			name = PhoneRegister;
 			productName = PhoneRegisterSystem;
-			productReference = 1D8EF7A11F838D820089444F /* PhoneRegisterSystem.app */;
+			productReference = 1D8EF7A11F838D820089444F /* PhoneRegister.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1D8EF79C1F838D810089444F /* Build configuration list for PBXProject "PhoneRegisterSystem" */;
+			buildConfigurationList = 1D8EF79C1F838D810089444F /* Build configuration list for PBXProject "Register" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -228,7 +228,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				1D8EF7A01F838D810089444F /* PhoneRegisterSystem */,
+				1D8EF7A01F838D810089444F /* PhoneRegister */,
 			);
 		};
 /* End PBXProject section */
@@ -485,7 +485,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D8EF79C1F838D810089444F /* Build configuration list for PBXProject "PhoneRegisterSystem" */ = {
+		1D8EF79C1F838D810089444F /* Build configuration list for PBXProject "Register" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D8EF7B11F838D820089444F /* Debug */,
@@ -494,7 +494,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D8EF7B31F838D820089444F /* Build configuration list for PBXNativeTarget "PhoneRegisterSystem" */ = {
+		1D8EF7B31F838D820089444F /* Build configuration list for PBXNativeTarget "PhoneRegister" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D8EF7B41F838D820089444F /* Debug */,

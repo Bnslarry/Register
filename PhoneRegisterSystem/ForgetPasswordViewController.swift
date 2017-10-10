@@ -31,7 +31,7 @@ class ForgetPasswordViewController: UIViewController {
         spinner.isHidden = false
         spinner.startAnimating()
         
-        let time: TimeInterval = 2.0
+        let time: TimeInterval = 0.6
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + time) {
             let identCode = self.identifyCode.text
             if(identCode?.characters.count == 4)
@@ -56,7 +56,7 @@ class ForgetPasswordViewController: UIViewController {
     
     @IBAction func alertPassword(_ sender: UIButton) {
         let urlstring = "http://fengke.net:8081/app/forget"
-        Alamofire.request(urlstring, method:.post, parameters: ["userPhone": phoneNum, "userPass": newPassword, "ValidateCode": "9999"]).responseJSON {
+        Alamofire.request(urlstring, method:.post, parameters: ["userPhone": phoneNum.text!, "userPass": newPassword.text!, "ValidateCode": "9999"]).responseJSON {
             (responds) in
             switch responds.result.isSuccess {
             case true:
@@ -67,7 +67,9 @@ class ForgetPasswordViewController: UIViewController {
                     {
                         let alert_ok = UIAlertController(title: "提示", message: "修改密码成功!", preferredStyle: .alert)
                         
-                        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                        let okAction = UIAlertAction(title: "OK", style: .default, handler: {
+                            action in self.performSegue(withIdentifier: "ConfigurePasswordOK", sender: nil)
+                        })
                         alert_ok.addAction(okAction)
                         
                         self.present(alert_ok, animated: true, completion: nil)
@@ -99,11 +101,12 @@ class ForgetPasswordViewController: UIViewController {
             let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
             alert_num.addAction(okAction)
             
+            
             present(alert_num, animated: true, completion: nil)
         }
         else {
             let urlstring = "http://fengke.net:8081/app/isExist"
-            Alamofire.request(urlstring, method:.post, parameters: ["userId": phoneNum!]).responseJSON {
+            Alamofire.request(urlstring, method:.post, parameters: ["userId": numString!]).responseJSON {
                 (returnResult) in
                 switch returnResult.result.isSuccess {
                 case true:

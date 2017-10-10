@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:PhoneRegisterSystem.xcodeproj">
+      location = "self:/Users/lambert/Desktop/PhoneRegisterSystem/Register.xcodeproj">
    </FileRef>
 </Workspace>

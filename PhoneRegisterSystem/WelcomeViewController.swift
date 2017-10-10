@@ -61,6 +61,7 @@ class WelcomeViewController: UIViewController {
     
     func logInSuccess() {
         print("OK!")
+        performSegue(withIdentifier: "loginSegue", sender: nil)
     }
     
     func passwordInconsistent(message msg: String!) {
